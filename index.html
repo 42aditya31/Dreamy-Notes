@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Task Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <h1>Task Tracker</h1>
+       
+    </header>
+
+    <main>
+        <section class="task-input">
+            <h2>Add New Task</h2>
+            <form id="taskForm">
+                <input type="text" id="taskName" placeholder="Task Name" required />
+                <input type="date" id="taskDeadline" required />
+                <select id="taskPriority" required>
+                    <option value="High">High Priority</option>
+                    <option value="Medium">Medium Priority</option>
+                    <option value="Low">Low Priority</option>
+                </select>
+                <button type="submit" class="add-task">Add Task</button>
+            </form>
+        </section>
+
+        <section class="task-list">
+            <h2>Your Tasks</h2>
+            <div id="taskContainer"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Total Tasks: <span id="totalTasks">0</span></p>
+        <p>Completed Tasks: <span id="completedTasks">0</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
